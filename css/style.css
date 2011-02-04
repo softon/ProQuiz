@@ -1,0 +1,568 @@
+/*!
+ * **************************************************************
+ ****************  ProQuiz V2.0.0b ******************************
+ ***************************************************************/
+ /* documentation at: http://proquiz.softon.org/documentation/
+ /* Designed & Maintained by
+ /*                                    - Softon Technologies
+ /* Developer
+ /*                                    - Manzovi
+ /* For Support Contact @
+ /*                                    - proquiz@softon.org
+ /* version 2.0.0 beta (2 Feb 2011)
+ /* Licensed under GPL license:
+ /* http://www.gnu.org/licenses/gpl.html
+ */
+ 
+ body {
+	background:#ffffff;
+	font-family:sans-serif;
+	font-size:62.5%; /* Sets default font size to 10px */
+	color:#ffffff;
+	}
+
+* {
+	margin:0;
+	padding:0;
+	}
+
+img {
+	border:0;
+	}
+
+p {
+	margin-bottom:1.75em;
+	}
+
+a {
+	text-decoration:none;
+	color: #F60;
+	}
+a:hover {
+	text-decoration:none;
+	color: #82bde4;
+	}
+
+	
+
+/******   wrapper  ***/
+#wrapper {
+	margin:0 auto;
+	width:800px;
+	background:#ffffff;
+	font-size:1.20em;
+
+	}
+#header {
+	height:154px;
+	/*background:url(../images/banner.png) no-repeat;*/
+	}
+    
+#headerResults {
+	height:50px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    color: black;
+    background: #D3DFE5;
+    margin-bottom: 10px;
+    border-bottom: #094268 1px solid;
+    border-left: #094268 1px solid;
+    border-right: #094268 1px solid;
+	}
+    
+#headerResults span{
+    color: blue;
+}
+    
+/***** Menu Styles And Corners   ***/
+#menu {
+	position: relative;
+    width: 800px;
+	}
+    
+div.corner-left{
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: url(../images/corners.png) top left;
+    padding: 0px;
+    margin: 0px;
+}
+
+div#menuCenter {
+    float: left;
+    height: 35px;
+    width: 730px;
+    background: url(../images/topBtm.png) top left repeat-x;
+    padding: 0px;
+    margin: 0px;
+}
+
+div#menuCenterResults {
+    float: left;
+    height: 35px;
+    width: 730px;
+    background: url(../images/topBtm.png) top left repeat-x;
+    padding: 0px;
+    margin: 0px;
+    font-size: 1.3em;
+    text-align: center;
+}
+div.corner-right{
+    float: right;
+    width: 35px;
+    height: 35px;
+    background: url(../images/corners.png) top right;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+/***********   SideBar    ********/
+
+#sidebar {
+	float:right;
+	width:228px;
+	background:#fff;
+	color: black;
+	}
+    
+.sideCnt {
+    background-color: #CFD0EA;
+    border-right: #2d5372 solid 1px;
+    border-left: #2d5372 solid 1px;
+    padding: 5px;
+    margin: 0px 5px 0px 10px;
+}
+
+.sideSep {
+    width: 220px;
+    height: 3px;
+    background: url(../images/seperator.png) no-repeat;
+    margin: 7px 0px 2px 0px;
+}
+    
+div#sideFooter {
+    width: 228px;
+    height: 35px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 0px 0px 0px 5px;
+}
+
+div#sideTop {
+    width: 228px;
+    height: 35px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 0px 0px 0px 5px;
+}    
+
+div.corner-Tright{
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: url(../images/corners.png) top right;
+    padding: 0px;
+    margin: 0px;
+}
+
+div#sideFooter div#sideBtmCenter {
+     float: left;
+     height: 35px;
+     background: url(../images/topBtm.png) repeat-x bottom left;
+     width: 153px;
+
+}
+
+div#sideTop div#sideTopCenter {
+     float: left;
+     height: 35px;
+     background: url(../images/topBtm.png) repeat-x top left;
+     width: 153px;
+
+}
+
+div#sideFooter div#sideBtmCenter span{
+     font-weight: bold;
+     font-size: 1.0em;
+     color: #EAF0F4;
+     cursor: pointer;
+}  
+     
+div.sideDataType {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #000;
+    text-align: left;
+    
+} 
+
+span.sideDataValue {
+    font-size: 1.1em;
+    color: #2d5372;
+    font-weight: normal;
+} 
+ 
+ 
+    
+#content {
+	float:left;
+	width:570px;
+	min-height:350px;
+	border-left:solid #2d5372 1px;
+	border-right:solid #2d5372 1px;
+	}
+    
+/****** Footer Style    ****/
+#footer {
+	clear:left;
+	height:35px;
+	}
+    
+ div.corner-bLeft{
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: url(../images/corners.png) bottom left;
+    padding: 0px;
+    margin: 0px;
+}
+
+div#footer-valid {
+    float: left;
+    height: 35px;
+    width: 502px;
+    background: url(../images/topBtm.png) bottom left repeat-x;
+    padding: 0px;
+    margin: 0px;
+}
+div.corner-bRight{
+    float: left;
+    width: 35px;
+    height: 35px;
+    background: url(../images/corners.png) bottom right;
+    padding: 0px;
+    margin: 0px;
+}
+
+#softon {
+    padding-left: 200px;
+    font-weight: bold;
+    color: #2d5372;
+}
+
+/* Entries */
+
+.pqMain {
+	padding:25px 10px;
+	text-align:justify;
+	line-height:1.75em;
+	}
+.pqTitle {
+	font-size:1.90em;
+	font-weight:normal;
+	letter-spacing:-1px;
+	color:#F60;
+	}
+.pqSubTitle {
+	font-size:0.9em;
+	color:#008EEC;
+	cursor:default;
+	letter-spacing:1px;
+    padding-left: 5px;
+	}
+    
+/* Error Styles */    
+.pqSubError {
+    background-color: #ffd9d9;
+    padding: 5px 10px;
+    border: #cb2215 1px solid;
+}
+
+.pqSubError ul{
+    background-color: #ffd9d9;
+    list-style-type: none;
+}
+
+.pqSubError ul li{
+    font-size:1.0em;
+    font-weight: bold;
+    background: url(../images/alert.png) #ffd9d9 no-repeat;
+    background-position: bottom left;
+	color:#cb2215;
+	letter-spacing:1px;
+    min-height: 18px;
+    padding-left: 20px;
+}
+
+.pqSubDone {
+    background-color: #abff92;
+    padding: 5px 10px;
+    border: #1c8e00 1px solid;
+}
+
+.pqSubDone ul{
+    background-color: #abff92;
+    list-style-type: none;
+}
+
+.pqSubDone ul li{
+    font-size:1.0em;
+    font-weight: bold;
+    background: url(../images/correct.png) #abff92 no-repeat;
+    background-position: bottom left;
+	color:#1c8e00;
+	letter-spacing:1px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+.pqSubNotice {
+    background-color: #c0d2e8;
+    padding: 5px 10px;
+    border: #0f3468 1px solid;
+}
+
+.pqSubNotice ul{
+    background-color: #c0d2e8;
+    list-style-type: none;
+}
+
+.pqSubNotice ul li{
+    font-size:1.0em;
+    font-weight: bold;
+    background: url(../images/notice.png) #c0d2e8 no-repeat;
+    background-position: bottom left;
+	color:#0f3468;
+	letter-spacing:1px;
+    height: 18px;
+    padding-left: 20px;
+}
+
+/* Menu */
+
+
+#menuCenter ul {
+	list-style-type:none;
+    
+	}
+#menuCenter li {
+	float:left;
+    
+	}
+#menuCenter li a {
+	padding:7px 15px;
+	display:block;
+	color:#ffffff;
+    font-size: 1.2em;
+    font-weight: bold;
+	margin:0px 0px;
+    height: 21px;
+	}
+#menuCenter li a:hover {
+	background-color: #82bde4;
+	}
+#menuCenter li a.current {
+    background-color: #FE8005;
+}
+
+
+/* Footer */
+
+#footer-valid {
+	cursor:default;
+	color:#82bde4;
+    position: relative;
+	}
+#footer-valid a {
+	color:#aaa;
+	text-decoration:none;
+	}
+#footer-valid a:hover {
+	color:#ffffff;
+	text-decoration:none;
+
+	}
+#footer-valid span {
+    position: absolute;
+    padding: 10px 0px 10px 150px;
+}
+
+/* Heading's */
+
+h1 {
+	font-size:2.5em;
+	font-weight:normal;
+	cursor:default;
+	position:relative; top:50px; left:30px;
+	letter-spacing:1px;
+	color:#aaaaaa;
+	font-style:italic;
+	}
+
+h2 {
+	font-size: 16px;
+	font-weight:bold;
+	cursor:default;
+	position: inherit; top:50px; left:30px;
+	letter-spacing:0.5px;
+	color: #FF6600;
+	}
+
+
+/******** Content Holder Quiz Menu  ****/
+
+div.cntHolder {
+    position: relative;
+    width:500px;
+    color: #000;
+    margin: 10px 20px;
+}
+
+div.iconBox {
+    float: left;
+    width: 110px;
+    height: 110px;
+    background-color: #F0F0F2;
+    border: #82bde4 solid 1px ;
+    margin: 5px;
+}
+
+div.iconBox:hover {
+    border: #FE8005 solid 1px;
+    background-color: #F0F0c2;
+}
+
+div.iconBox a {
+    display: block;
+    width: 110px;
+    height: 70px;    
+    margin: 0px auto;
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: bold;    
+}
+
+div.iconBox img {
+    display: block;
+    margin: 0px auto;
+}
+
+div.iconBoxd {
+    float: left;
+    width: 110px;
+    height: 110px;
+    background-color: #C3C3C3;
+    border: #C3C3C3 solid 1px ;
+    margin: 5px;
+}
+
+div.iconBoxd a {
+    display: block;
+    width: 110px;
+    height: 70px;    
+    margin: 0px auto;
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: bold;
+    color: #4D4D4F; 
+    cursor: default;   
+}
+
+div.iconBoxd img {
+    display: block;
+    margin: 0px auto;
+}
+
+/* Profile Styles  */
+
+div.sideCnt div.sideImg {
+    width: 100px;
+    height: 100px;
+    margin: 5px auto;
+    background: url(../images/profile_border.png) top left no-repeat;
+}
+
+div.sideCnt div.sideImg  img{
+    padding: 15px 15px;
+}
+
+div.sideData {
+    border-bottom: #2D5372 1px dotted;
+    padding: 5px 0px;
+}
+
+/* utton Styles */
+.sbutton{
+	border:hidden;
+		background-image: url(../images/button.jpg);
+		background-repeat:no-repeat;
+		width:100px;
+		height:30px;
+		color:#FFF;
+		font-weight:bold;
+}
+
+.spbutton{
+	    border:hidden;
+		background-image: url(../images/spbutton.png);
+		background-repeat:no-repeat;
+		width:30px;
+		height:30px;
+		color:#FFF;
+		font-weight:bold;
+}
+
+.sbutton:hover{
+	border:hidden;
+		background-image: url(../images/buttonh.jpg);
+		background-repeat:no-repeat;
+		width:100px;
+		height:30px;
+		color:#000;
+		cursor:pointer;
+		font-weight:bold;
+}
+
+.spbutton:hover{
+	    border:hidden;
+		background-image: url(../images/spbuttonh.png);
+		background-repeat:no-repeat;
+		width:30px;
+		height:30px;
+		color:#FFF;
+        cursor:pointer;
+		font-weight:bold;
+}
+
+#onlineUsersList {
+    list-style: none;
+    max-height: 300px;
+    overflow: hidden;
+}
+
+#onlineUsersList li {
+    text-align: center;
+    font-weight: bold;
+}
+
+#rankScroller ul {
+    list-style: none;
+    width: 100%;
+}
+
+.userDisp {
+    font-weight: bold;
+    font-size: 1.1em;
+    
+}
+
+#ratingScroll {
+padding-right: 10px;
+padding-left: 10px;
+}

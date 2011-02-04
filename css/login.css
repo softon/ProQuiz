@@ -1,0 +1,418 @@
+/*!
+ * **************************************************************
+ ****************  ProQuiz V2.0.0b ******************************
+ ***************************************************************/
+ /* documentation at: http://proquiz.softon.org/documentation/
+ /* Designed & Maintained by
+ /*                                    - Softon Technologies
+ /* Developer
+ /*                                    - Manzovi
+ /* For Support Contact @
+ /*                                    - proquiz@softon.org
+ /* version 2.0.0 beta (2 Feb 2011)
+ /* Licensed under GPL license:
+ /* http://www.gnu.org/licenses/gpl.html
+ */
+	
+	/* PAGE CONTAINERS ---------------------------------------------------------- */
+	
+	#container
+		{
+		width: 450px;
+		}
+
+	#newquiz
+	{
+	   width: 500px;
+	}
+
+	/* CONTENT ------------------------------------------------------------------ */
+	
+	form
+		{
+		margin-top: 1.5em;
+		}
+	
+	
+
+	/*** MASTER FORM WIDTHS - CUSTOMIZE THIS TO CHANGE THE FORM LAYOUT ***/
+
+	/*
+	form width:		550px
+	left column:	190px / 180px + 10px padding
+	mid column:		200px
+	right column:	160px
+	*/
+
+	form{
+		width:500px !important;
+		}
+
+	fieldset.submit
+		{
+		padding-left: 190px !important;
+		}
+
+	form label{
+		padding:0px 10px;
+		width: 100px;
+		}
+
+	form label.error,
+	form input.submit
+		{
+		margin-left:150px !important;
+		}		
+
+	form fieldset fieldset label.error
+		{
+		margin-left:0px !important;
+		width:200px !important;
+		}		
+
+
+	form .centered{
+		margin-left:180px !important;
+		width:200px !important;
+		}
+	
+	form .text, 
+	form.button{
+		
+		
+	},
+	form .group,
+	form .control,
+	form .submit,
+	form textarea,
+	form select
+		{
+		width: 200px !important;
+		}
+		
+
+
+
+/*** FIELDSETS AND LEGENDS ***/
+
+	form{
+		width:450px;
+		margin-bottom:25px;
+		clear:both;
+		}
+
+	form fieldset
+		{
+		margin: 0 0 1.5em 0;
+		padding: 0 0 10px 0px;
+		
+		border: 1px solid #82BEE3;
+		
+		background-color: #F2EFE9;
+		
+		
+		background-color: #fff;
+		
+		
+		float: left;
+		clear: both;
+		width: 100%;
+		
+		}
+	
+	form fieldset.submit
+		{
+		padding: 0px 10px 10px 190px;
+		border-style: none;
+		
+		background-color: transparent;
+		background-image: none;
+		
+		float: none;
+		width: auto;
+		
+		}
+	
+	form legend
+		{
+		color: #000000;
+		background-image:url(../images/legend.jpg);
+		background-position:center;
+		width:100px;
+		height:20px;
+		font-size:1.3em;
+		font-weight: bold;
+		font-variant:small-caps;
+		text-align:center;
+		
+		margin-left: 10px;
+		}
+		
+	form fieldset p{
+ 		margin:10px 0px 0px 10px;
+ 		}
+	
+/*** FORM BLOCKS ***/
+
+	form ul
+		{
+		padding:5px 10px;
+		list-style: none;
+		}
+	
+	form li
+		{
+		width: 100%;
+		margin-left:0px;
+		
+		padding:5px 0px 10px 0;
+		border-top:1px dotted #82BEE3;
+			color:#000000;
+		
+		display:block;
+		float: left;
+		clear: left;
+	}
+	
+	form li:first-child
+		{
+		border:none;
+		}
+
+	
+/*** FORM BLOCK ELEMENTS ***/
+
+	form label
+		{
+		padding:0px 10px;
+		width: 160px;
+		float: left;
+		font-weight:bold;
+		font-size:1em;
+		letter-spacing:0em;
+		word-spacing:0.2em;
+		}
+		
+	form .error{
+		color: #c00;
+		}
+		
+	form label.grpDisp
+{
+
+	padding:0px 10px;
+		width:330px;
+		float: left;
+}
+	form label.error
+		{
+		color: #c00;
+		
+		font-size: 100%;
+		font-weight: bold;
+		font-variant:small-caps;
+		
+		width:308px;
+		display: none;
+
+		margin:8px 0px 0px 180px;
+		padding:3px 0px 0px 5px;
+		/*border-top:1px dotted #ccc;*/
+		
+		clear:both;
+		}
+		
+	form label.info{
+		font-size: 100%;
+		font-weight: bold;
+		font-variant:small-caps;
+		
+		margin:8px 0px 0px 180px;
+		padding:3px 0px 0px 5px;
+		}
+		
+
+	form fieldset fieldset,
+	form .group
+		{
+		width:200px;
+		
+		margin: 0;
+		border:none;
+		
+		background:none;
+		
+		float:left;
+		clear: none;
+		
+		}
+		
+	form fieldset fieldset label
+		{
+		width:auto !important;
+		white-space:nowrap;
+		padding:0px;
+		margin:0px;
+		display:block;
+		clear:both;
+		}
+		
+	form label label.error{
+		margin-left:0px;
+		}
+
+	form label.centered{
+		padding:0px 0px;
+		width:200px !important;
+		}
+		
+	/* see also the error class at the foot of the page */
+	
+	form fieldset fieldset label.spaced
+		{
+		margin-bottom:3px;
+		}
+
+/*** FORM ELEMENT COLUMNS ***/
+
+	.col-1,
+	fieldset fieldset.col-1 label
+		{
+		width:100%;
+		}
+
+	.col-2,
+	fieldset fieldset.col-2 label
+		{
+		width:50%;
+		}
+
+	.col-3,
+	fieldset fieldset.col-3 label
+		{
+		width:33%;
+		}
+
+	.col-4,
+	fieldset fieldset.col-4 label
+		{
+		width:25%;
+		}
+
+
+
+
+/*** FORM ELEMENTS ***/
+
+	form input.submit{
+		margin:10px 0px 10px 180px;
+		padding:0px 2px;
+		}
+
+	form input, textarea, select, 
+	form label
+		{
+		font-size:1.1em;
+		line-height:1.6em;
+		}
+
+	form input, textarea, select
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+        color: #094268;
+        border: #82BEE3 1px solid;
+
+		}
+    form input:hover, textarea:hover, select:hover
+		{
+		font-family: Verdana, Arial, Helvetica, sans-serif;
+        color: #000;
+        border: #FF7C00 1px solid;
+		}
+
+	form .input[type="text"],
+	form textarea
+		{
+		padding:1px;
+		}
+		
+	form .input[type="radio"],
+	form .input[type="checkbox"]
+		{
+		margin:0px;
+		padding:0px;
+		position:relative;
+		top:3px;
+		}
+		
+/*** SUPPORTING CLASSES ***/
+
+	form label.required{
+		background-image:url(../images/required_star.gif);
+		background-position:right;
+		background-repeat:no-repeat;
+		}
+	
+	form span.required{
+		padding-right:15px;
+		}
+		
+	form .clean
+		{
+		border:none;
+		}
+		
+	form .info{
+		padding-top:0.5em;
+		font-size:80%;
+		line-height:100%;
+		color:#aaa;
+		}
+		
+	form .indent{
+ 		padding:2px 20px; 
+		width:auto !important;
+		white-space:nowrap;
+		padding-left: 25px !important;
+ 		}
+		
+	form label.disabled{
+		color:#aaa;
+		}
+	
+	form .highlight{
+		background-color:#e2e2e2;
+		}
+	
+	.off{
+		display:none !important;
+		}
+		
+	.clear{
+		clear:both;
+		}
+	input#modlgn_photo {
+
+	}
+ 
+ 
+ /*  Captcha Style  */
+ 
+ div#captchaImg {
+    float: left;
+    margin: 20px;
+}
+
+div#captchaInput {
+    padding-top: 20px;
+}
+
+div#captchaInput input{
+    width: 100px;
+    height: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: grey;
+    padding: 0px 10px;
+
+}         

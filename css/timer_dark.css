@@ -1,0 +1,56 @@
+#countdown_dashboard {
+	width: 100%;
+	float: left;
+	margin: 0px 0px;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    background: url(../images/timerbg.png) no-repeat;
+    background-position: center;
+}
+
+#weeks_days_container {
+	width: 347.5px;
+	overflow: hidden;
+	padding-left: 87.5px;
+}
+
+#time_container {
+	width: 412.5px;
+	overflow: hidden;
+	padding-left: 0px;
+	margin: 20px auto;
+}
+
+.dash {
+	width: 110px;
+	height: 114px;
+	background: transparent url(../images/timer/dash_dark.png) 0 0 no-repeat;
+	float: left;
+	margin-left: 20px;
+	position: relative;
+}
+
+.dash .digit {
+	font-size: 72px;
+	font-weight: bold;
+	float: left;
+	width: 55px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #f6f6f6;
+	position: relative;
+	padding-top: 5px;
+}
+
+.dash_title {
+	position: absolute;
+	display: block;
+	bottom: 0px;
+	font-size: 12px;
+	color: #555;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	width: 110px;
+	text-align: center;
+}
