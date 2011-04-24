@@ -24,10 +24,14 @@ if(!file_exists('config.inc.php')){
     header('Location:install/index.php');
 }
 
-include_once('userAuth.class.php');
-include_once('Database.class.php');
+function __autoload($class){
+    $class_file = dirname(__file__).'/classes/'.$class.'.class.php';
+    if(file_exists($class_file)){
+        require_once $class_file;
+    }
+}
+
 include_once('config.inc.php');
-include_once('Proquiz.class.php');
 include_once('mail/class.phpmailer.php');
 
 
